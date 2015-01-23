@@ -1,0 +1,132 @@
+
+.cm-container {
+    position: fixed;
+    z-index: 9999;
+    display: inline-block;
+    color: #1A2733;
+}
+
+.cm-container.right {
+    width: auto;
+}
+
+.cm-container .cm-button {
+    display: block;
+    /*height: 100%;
+    width: 100%;*/
+    line-height: 100%;
+    background: #FC0;
+    background-image: url('pin-icon.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: right;
+    box-shadow: 2px 2px 3px #333;
+    position: relative;
+}
+
+.cm-container.right .cm-button {
+    border-radius: 5px 0 0 5px;
+}
+
+.cm-container.left .cm-button {
+    border-radius: 5px 0 0 5px;
+}
+
+.cm-container label {
+    font-weight: bold;
+}
+
+.cm-container .cm-content {
+    /*width: 200px;
+    min-height: 200px;
+    border: 1px solid #222B34;*/
+    background: #FC0;
+    right: 0px;
+    position: fixed;
+    /*display: none;*/
+    box-shadow: 2px 2px 3px #333;
+    padding: 4px 10px;
+}
+
+.cm-container:hover .cm-content {
+    display: block;
+}
+
+.cm-container .cm-inputContainer {
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+.cm-container .cm-inputContainer input {
+    color: #1A2733;
+    display: block;
+    width: 80%;
+    margin: 3px 0;
+    
+    height: 30px;
+    outline: 0px none;
+    padding: 3px 3px 3px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    box-shadow: 0px 1px 4px #cdcdcd inset;
+}
+
+.cm-container .cm-inputContainer button,
+.cm-container .cm-content button.delButton {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 16px;
+    /*padding: 2px 0;
+    
+    background: none;*/
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    background: none no-repeat scroll center center #1A2733;;
+    background-size: 40%;
+    border: none;
+}
+
+.cm-container .cm-inputContainer button {
+    background-image: url('plus-icon_white.png');
+    margin: 6px 2px 0;
+}
+
+.cm-container .cm-content button.delButton {
+    background-image: url('minus-icon_white.png');
+    margin: 6px 2px 0;
+}
+
+.cm-container .cm-inputContainer button:hover {
+    background-color: #Ffbb00;
+}
+
+.cm-container .cm-content button.delButton:hover {
+    background-color: #Ffcc00;
+}
+
+.cm-container .cm-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.cm-container .cm-content li {
+    border-top: 1px dotted #686868;
+}
+
+.cm-container .cm-content li a.pageLink {
+    display: block;
+    font-weight: bold;
+    padding: 8px 14px;
+    color: #1A2733;
+}
+
+.cm-container .cm-content li a.pageLink:hover {
+    background: #Ffbb00;
+}
